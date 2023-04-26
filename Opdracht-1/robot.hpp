@@ -1,13 +1,13 @@
 #ifndef ROBOT
 #define ROBOT
 
-class Positiable;
+class Locatie;
 
 class Robot 
 {
     public:
         Robot(Locatie *p);
-        virtual ~Robot();
+        virtual ~Robot() {};
         virtual void run();
         virtual void show();
     

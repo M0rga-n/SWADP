@@ -6,10 +6,10 @@
 class Positie : public Locatie
 {
     public:
-        Positie(int x, int y);
+        Positie(int, int);
         virtual int x();
         virtual int y();
-        virtual void move(int dx, int dy);
+        virtual void move(int, int);
 
     private:
         int X;

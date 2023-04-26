@@ -14,5 +14,5 @@ void Robot::run()
 
 void Robot::show()
 {
-    std::cout<<P->x()<<P->y()<<std::endl;
+    std::cout<<P->x() << " " << P->y()<<std::endl;
 }

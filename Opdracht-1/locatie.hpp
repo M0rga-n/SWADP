@@ -1,14 +1,14 @@
 #ifndef POSITIEABLE
 #define POSITIEABLE
 
-class Positiable
+class Locatie
 {
     public:
-        virtual ~Positiable();
+        virtual ~Locatie() {};
 
         virtual int x() = 0;
         virtual int y() = 0;
-        virtual void move() = 0;
+        virtual void move(int, int) = 0;
 };
 
 #endif // !POSITIEABLE
