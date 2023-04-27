@@ -1,6 +1,7 @@
 #ifndef ROBOT
 #define ROBOT
 
+#include <memory>
 class Locatie;
 
 class Robot 
