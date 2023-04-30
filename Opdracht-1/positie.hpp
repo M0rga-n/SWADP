@@ -7,9 +7,9 @@ class Positie : public Locatie
 {
     public:
         Positie(int, int);
-        virtual int x();
-        virtual int y();
-        virtual void move(int, int);
+        virtual int x() override;
+        virtual int y() override;
+        virtual void move(int, int) override; 
 
     private:
         int X;
