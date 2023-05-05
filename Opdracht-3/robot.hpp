@@ -10,6 +10,7 @@ private:
 
 public:
     RobotImpl(Temperatuur*);
+    virtual ~RobotImpl();
     virtual void checkTemp();
 };
 
