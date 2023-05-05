@@ -12,6 +12,8 @@ private:
 
 public:
     AnalogeMeter(Snelheid*);
+    virtual ~AnalogeMeter();
     virtual void update() override;
 };
+
 #endif // !__METERS_H

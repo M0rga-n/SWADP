@@ -12,6 +12,7 @@ private:
 
 public:
     DigitaleMeter(Snelheid*);
+    virtual ~DigitaleMeter();
     virtual void update() override;
 };
 
