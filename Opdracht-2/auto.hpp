@@ -6,7 +6,7 @@ class Snelheid;
 class Auto
 {
 private:
-    Snelheid* m_Snelheid;
+    Snelheid* m_snelheid;
 
 public:
     Auto(Snelheid*);
