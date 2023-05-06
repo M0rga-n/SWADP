@@ -13,7 +13,7 @@ class Robot
         virtual void show();
     
     private:
-        Locatie *P;
+        Locatie* P;
 };
 
 #endif // !ROBOT
