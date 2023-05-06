@@ -10,7 +10,7 @@ private:
     int m_temperatuur;
 
 public:
-    virtual ~TemperatuurImpl();
+    virtual ~TemperatuurImpl() {};
     virtual void meet() override;
     virtual int waarde() const override { return m_temperatuur;}
     virtual void haalwaarde();

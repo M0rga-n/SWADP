@@ -4,7 +4,7 @@
 class Temperatuur
 {
 public:
-    virtual ~Temperatuur();
+    virtual ~Temperatuur() {};
     virtual void meet() =0;
     virtual int waarde() const =0;
 };
