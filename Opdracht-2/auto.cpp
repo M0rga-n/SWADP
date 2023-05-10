@@ -8,5 +8,5 @@ Auto::Auto(Snelheid* subject) : m_snelheid(subject)
 
 void Auto::meetSnelheid()
 {
-    m_snelheid->meet();
+    m_snelheid->Snelheid::meet();
 }

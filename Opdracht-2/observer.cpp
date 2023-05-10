@@ -2,7 +2,7 @@
 
 void Subject::notify()
 {
-    for (auto const& i : m_List) i->update();
+    for (auto const& i : m_List) i->Observer::update();
 }
 
 Observer::Observer (Subject* subject) : m_Subject(subject)
