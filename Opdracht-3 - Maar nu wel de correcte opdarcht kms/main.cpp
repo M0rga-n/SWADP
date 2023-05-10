@@ -75,8 +75,8 @@ private:
 public:
     Ninja(std::string);
     virtual ~Ninja() {};
-    virtual void draw();
-    virtual std::string name() { return m_Name; }
+    virtual void draw() override;
+    virtual std::string name() override { return m_Name; }
     virtual void incLevens();
     virtual void decLevens();
 };
@@ -94,13 +94,13 @@ void Ninja::draw()
 void Ninja::incLevens()
 {
     m_AantalLevens++;
-    notify();
+    Subject::notify();
 }
 
 void Ninja::decLevens()
 {
     m_AantalLevens--;
-    notify();
+    Subject::notify();
 }
 // ================================================================
 // InterfaceLayer
@@ -115,7 +115,7 @@ public:
     NinjaWindow(Ninja*);
     virtual ~NinjaWindow() {}
     virtual void draw() { m_Ninja->draw(); }
-    virtual void update() { draw(); }
+    virtual void update() override { draw(); }
 };
 
 NinjaWindow::NinjaWindow(Ninja* ninja) : Observer(ninja), m_Ninja(ninja)
