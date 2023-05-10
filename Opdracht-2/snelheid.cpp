@@ -4,7 +4,7 @@
 void Snelheid::meet()
 {
     measure();
-    Subject::notify();
+    notify();
 }
 
 float Snelheid::getWaarde()
