@@ -94,13 +94,13 @@ void Ninja::draw()
 void Ninja::incLevens()
 {
     m_AantalLevens++;
-    Subject::notify();
+    notify();
 }
 
 void Ninja::decLevens()
 {
     m_AantalLevens--;
-    Subject::notify();
+    notify();
 }
 // ================================================================
 // InterfaceLayer
@@ -114,7 +114,7 @@ private:
 public:
     NinjaWindow(Ninja*);
     virtual ~NinjaWindow() {}
-    virtual void draw() { m_Ninja->draw(); }
+    virtual void draw() { m_Ninja->draw(); } //Dynamic cast??
     virtual void update() override { draw(); }
 };
 
