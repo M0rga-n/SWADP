@@ -30,7 +30,7 @@ protected:
 
 public:
     Subject(){}
-    virtual ~Subject(){}
+    virtual ~Subject() {}
     virtual void insert(Observer* subject) {m_List.push_front(subject);}
     virtual void remove(Observer* subject) {m_List.remove(subject);}
 

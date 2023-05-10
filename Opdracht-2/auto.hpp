@@ -10,7 +10,7 @@ private:
 
 public:
     Auto(Snelheid*);
-    virtual ~Auto();
+    virtual ~Auto() {}
     virtual void meetSnelheid();
 };
 #endif // !__AUTO_H
