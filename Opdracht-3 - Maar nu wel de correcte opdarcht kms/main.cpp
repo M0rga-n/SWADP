@@ -108,19 +108,27 @@ void Ninja::decLevens()
 
 class NinjaWindow : public Observer
 {
-private:
-    Ninja* m_Ninja;
 
 public:
     NinjaWindow(Ninja*);
     virtual ~NinjaWindow() {}
-    virtual void draw() { m_Ninja->draw(); } //Dynamic cast??
+    virtual void draw();
     virtual void update() override { draw(); }
 };
 
-NinjaWindow::NinjaWindow(Ninja* ninja) : Observer(ninja), m_Ninja(ninja)
+NinjaWindow::NinjaWindow(Ninja* ninja) : Observer(ninja)
 {
 
+}
+
+void NinjaWindow::draw()
+{
+    Ninja* ninja = dynamic_cast<Ninja*>(getSubject());
+
+    if (ninja != nullptr)
+    {
+        ninja->draw();
+    }
 }
 
 int main()
