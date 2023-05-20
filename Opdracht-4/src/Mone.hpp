@@ -1,15 +1,15 @@
 //----------------------------------------------------------------------
-#ifndef IMONE_H
-#define IMONE_H
+#ifndef MONE_H
+#define MONE_H
 
 //----------------------------------------------------------------------
-#include "IMotor.hpp"
+#include "Motor.hpp"
 
 //----------------------------------------------------------------------
-class IMone : public IMotor
+class Mone : public Motor
 {
 
 };
 
 //----------------------------------------------------------------------
-#endif      // #ifndef IMONE_H
+#endif      // #ifndef MONE_H

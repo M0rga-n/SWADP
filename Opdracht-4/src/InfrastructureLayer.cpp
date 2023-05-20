@@ -6,32 +6,32 @@
 Observer::Observer(Subject* subject)
 :   p_subject(subject)
 {
-    getSubject()->insert(this);
+    GetSubject()->Insert(this);
 }
 
 //----------------------------------------------------------------------
 Observer::~Observer()
 {
-    getSubject()->remove(this);
+    GetSubject()->Remove(this);
 }
 
 //----------------------------------------------------------------------
-void Subject::insert(Observer* observer)
+void Subject::Insert(Observer* observer)
 {
     m_Observers.push_back(observer);
 }
 
 //----------------------------------------------------------------------
-void Subject::remove(Observer* observer)
+void Subject::Remove(Observer* observer)
 {
     m_Observers.remove(observer);
 }
 
 //----------------------------------------------------------------------
-void Subject::notify()
+void Subject::Notify()
 {
     for(Observer* const observer : m_Observers)
     {
-        observer->update();
+        observer->Update();
     }
 }

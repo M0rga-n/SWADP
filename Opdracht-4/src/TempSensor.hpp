@@ -11,9 +11,9 @@ class TempSensor : public ITempSensor
 public:
     TempSensor();
 
-    virtual void read() override;
+    virtual void Read() override;
 
-    virtual int getTemperature() override { return m_Temperature; };
+    virtual int GetTemperature() override { return m_Temperature; };
 
 private:
     int m_Temperature;

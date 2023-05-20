@@ -14,12 +14,12 @@ class Subject
 public:
     virtual ~Subject() {}
 
-    virtual void insert(Observer* observer);
+    virtual void Insert(Observer* observer);
 
-    virtual void remove(Observer* observer);
+    virtual void Remove(Observer* observer);
 
 protected:
-    virtual void notify();
+    virtual void Notify();
 
 private:
     std::list<Observer*> m_Observers;

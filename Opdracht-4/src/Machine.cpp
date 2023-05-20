@@ -1,27 +1,25 @@
 //----------------------------------------------------------------------
+#include "Machine.hpp"
 #include "Motor.hpp"
 
 //----------------------------------------------------------------------
-Motor::Motor(TempSensor* sensor)
-:   p_TempSensor(sensor)
+Machine::Machine(Mone* motor1, Mtwo* motor2)
+:   p_Motor1(motor1),
+    p_Motor2(motor2)
 {
 
 }
 
 //----------------------------------------------------------------------
-TempSensor* const Motor::GetTempSensor()
+void Machine::Start()
 {
-    return p_TempSensor;
+    p_Motor1->Start();
+    p_Motor2->Start();
 }
 
 //----------------------------------------------------------------------
-void Motor::Start()
+void Machine::Stop()
 {
-    m_Voltage = 24;
-}
-
-//----------------------------------------------------------------------
-void Motor::Stop()
-{
-    m_Voltage = 0;
+    p_Motor1->Stop();
+    p_Motor2->Stop();
 }

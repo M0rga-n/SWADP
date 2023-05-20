@@ -1,15 +1,15 @@
 //----------------------------------------------------------------------
-#ifndef IMTWO_H
-#define IMTWO_H
+#ifndef MTWO_H
+#define MTWO_H
 
 //----------------------------------------------------------------------
-#include "IMotor.hpp"
+#include "Motor.hpp"
 
 //----------------------------------------------------------------------
-class IMtwo : public IMotor
+class Mtwo : public Motor
 {
 
 };
 
 //----------------------------------------------------------------------
-#endif      // #ifndef IMTWO_H
+#endif      // #ifndef MTWO_H

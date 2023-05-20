@@ -14,11 +14,11 @@ class Motor : public IMotor
 public:
     Motor(TempSensor* sensor);
 
-    virtual TempSensor* const getTempSensor() override;
+    virtual TempSensor* const GetTempSensor() override;
 
-    virtual void start() override;
+    virtual void Start() override;
 
-    virtual void stop() override;
+    virtual void Stop() override;
 
 private:
     TempSensor* p_TempSensor;

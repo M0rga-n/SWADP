@@ -14,9 +14,9 @@ class TempDisplay : public Observer
 public:
     TempDisplay(Subject* sensor);
 
-    virtual void update() override { draw(); }
+    virtual void Update() override { Draw(); }
 
-    void draw();
+    void Draw();
 };
 
 //----------------------------------------------------------------------

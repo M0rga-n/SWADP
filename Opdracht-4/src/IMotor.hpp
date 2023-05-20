@@ -11,11 +11,11 @@ class IMotor
 public:
     virtual ~IMotor() {}
 
-    virtual TempSensor* const getTempSensor() =0;
+    virtual TempSensor* const GetTempSensor() =0;
 
-    virtual void start() =0;
+    virtual void Start() =0;
 
-    virtual void stop() =0;
+    virtual void Stop() =0;
 };
 
 //----------------------------------------------------------------------

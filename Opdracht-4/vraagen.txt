@@ -1,2 +1,4 @@
 1.  TempDisplay constructor, pointer naar Subject of ITempsensor
     of moet TemoSensor derived zijn van Subject implaats van ITempsensor
+
+2. In machine twee Motor of apart Mone & Mtwo.

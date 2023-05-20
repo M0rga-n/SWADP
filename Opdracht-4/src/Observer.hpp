@@ -13,10 +13,10 @@ public:
 
     virtual ~Observer();
 
-    virtual void update() =0;
+    virtual void Update() =0;
 
 protected:
-    Subject* getSubject() const { return p_subject; }
+    Subject* GetSubject() const { return p_subject; }
 
 private:
     Subject* p_subject;

@@ -9,9 +9,9 @@ TempSensor::TempSensor()
 
 }
 
-void TempSensor::read()
+void TempSensor::Read()
 {
     std::cin >> m_Temperature;
 
-    Subject::notify();
+    Subject::Notify();
 }

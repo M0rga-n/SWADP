@@ -10,9 +10,9 @@ TempDisplay::TempDisplay(Subject* sensor)
     
 }
 
-void TempDisplay::draw()
+void TempDisplay::Draw()
 {
-    TempSensor* sensor = dynamic_cast<TempSensor*>( Observer::getSubject());
+    TempSensor* sensor = dynamic_cast<TempSensor*>( Observer::GetSubject());
 
-    std::cout << sensor->getTemperature() << std::endl;
+    std::cout << sensor->GetTemperature() << std::endl;
 }

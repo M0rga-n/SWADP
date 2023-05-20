@@ -11,9 +11,9 @@ class ITempSensor : public Subject
 public:
     virtual ~ITempSensor() {}
 
-    virtual void read() =0;
+    virtual void Read() =0;
 
-    virtual int getTemperature() =0;
+    virtual int GetTemperature() =0;
 };
 
 //----------------------------------------------------------------------
