@@ -1,21 +1,15 @@
 //----------------------------------------------------------------------
-#ifndef MACHINE_H
-#define MACHINE_H
+#ifndef IMONE_H
+#define IMONE_H
 
 //----------------------------------------------------------------------
-#include "IMachine.hpp"
+#include "IMotor.hpp"
 
 //----------------------------------------------------------------------
-
-
-//----------------------------------------------------------------------
-class Machine : public IMachine
+class IMone : public IMotor
 {
-public:
 
-private:
-    
 };
 
 //----------------------------------------------------------------------
-#endif      // #ifndef MACHINE_H
+#endif      // #ifndef IMONE_H

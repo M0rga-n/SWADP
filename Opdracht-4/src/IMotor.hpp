@@ -1,21 +1,22 @@
 //----------------------------------------------------------------------
-#ifndef MACHINE_H
-#define MACHINE_H
+#ifndef IMOTOR_H
+#define IMOTOR_H
 
 //----------------------------------------------------------------------
-#include "IMachine.hpp"
+class TempSensor;
 
 //----------------------------------------------------------------------
-
-
-//----------------------------------------------------------------------
-class Machine : public IMachine
+class IMotor
 {
 public:
+    virtual ~IMotor() {}
 
-private:
-    
+    virtual TempSensor* const getTempSensor() =0;
+
+    virtual void start() =0;
+
+    virtual void stop() =0;
 };
 
 //----------------------------------------------------------------------
-#endif      // #ifndef MACHINE_H
+#endif      //#ifndef IMOTOR_H

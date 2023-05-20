@@ -12,7 +12,7 @@ class Observer;
 class Subject
 {
 public:
-    virtual ~Subject();
+    virtual ~Subject() {}
 
     virtual void insert(Observer* observer);
 

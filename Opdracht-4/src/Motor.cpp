@@ -1,17 +1,27 @@
 //----------------------------------------------------------------------
-#include "MotorImpl.hpp"
+#include "Motor.hpp"
 
 //----------------------------------------------------------------------
-MotorImpl::MotorImpl(TempSensor* sensor)
+Motor::Motor(TempSensor* sensor)
 :   p_TempSensor(sensor)
 {
 
 }
 
 //----------------------------------------------------------------------
-TempSensor* const MotorImpl::getTempSensor()
+TempSensor* const Motor::getTempSensor()
 {
     return p_TempSensor;
 }
 
 //----------------------------------------------------------------------
+void Motor::start()
+{
+    m_Voltage = 24;
+}
+
+//----------------------------------------------------------------------
+void Motor::stop()
+{
+    m_Voltage = 0;
+}

@@ -1,28 +1,23 @@
 //----------------------------------------------------------------------
-#ifndef MOTORIMPL_H
-#define MOTORIMPL_H
+#ifndef TEMPDISPLAY_H
+#define TEMPDISPLAY_H
 
 //----------------------------------------------------------------------
-#include "Motor.hpp"
+#include "Observer.hpp"
 
 //----------------------------------------------------------------------
-class TempSensor;
+class Subject;
 
 //----------------------------------------------------------------------
-class MotorImpl : public Motor
+class TempDisplay : public Observer
 {
 public:
-    MotorImpl(TempSensor* sensor);
+    TempDisplay(Subject* sensor);
 
-    virtual TempSensor* const getTempSensor() override;
+    virtual void update() override { draw(); }
 
-    virtual void start() override;
-
-    virtual void stop() override;
-
-private:
-    TempSensor* p_TempSensor;
+    void draw();
 };
 
 //----------------------------------------------------------------------
-#endif // #ifndef MOTORIMPL_H
+#endif      // #ifndef TEMPDISPLAY_H

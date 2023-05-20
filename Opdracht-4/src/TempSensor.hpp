@@ -3,14 +3,20 @@
 #define TEMPSENSOR_H
 
 //----------------------------------------------------------------------
-class TempSensor
+#include "ITempSensor.hpp"
+
+//----------------------------------------------------------------------
+class TempSensor : public ITempSensor
 {
 public:
-    virtual ~TempSensor();
+    TempSensor();
 
-    virtual void read() =0;
+    virtual void read() override;
 
-    virtual int getTemperature() =0;
+    virtual int getTemperature() override { return m_Temperature; };
+
+private:
+    int m_Temperature;
 };
 
 //----------------------------------------------------------------------

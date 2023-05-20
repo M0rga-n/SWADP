@@ -1,15 +1,20 @@
 //----------------------------------------------------------------------
-#ifndef MTWO_H
-#define MTWO_H
+#ifndef ITEMPSENSOR_H
+#define ITEMPSENSOR_H
 
 //----------------------------------------------------------------------
-#include "Motor.hpp"
+#include "Subject.hpp"
 
 //----------------------------------------------------------------------
-class Mtwo : public Motor
+class ITempSensor : public Subject
 {
+public:
+    virtual ~ITempSensor() {}
 
+    virtual void read() =0;
+
+    virtual int getTemperature() =0;
 };
 
 //----------------------------------------------------------------------
-#endif      // #ifndef MTWO_H
+#endif      // #ifndef ITEMPSENSOR_H

@@ -3,20 +3,28 @@
 #define MOTOR_H
 
 //----------------------------------------------------------------------
+#include "IMotor.hpp"
+
+//----------------------------------------------------------------------
 class TempSensor;
 
 //----------------------------------------------------------------------
-class Motor
+class Motor : public IMotor
 {
 public:
-    virtual ~Motor();
+    Motor(TempSensor* sensor);
 
-    virtual TempSensor* const getTempSensor() =0;
+    virtual TempSensor* const getTempSensor() override;
 
-    virtual void start() =0;
+    virtual void start() override;
 
-    virtual void stop() =0;
+    virtual void stop() override;
+
+private:
+    TempSensor* p_TempSensor;
+
+    int m_Voltage;
 };
 
 //----------------------------------------------------------------------
-#endif      //#ifndef MOTOR_H
+#endif // #ifndef MOTOR_H

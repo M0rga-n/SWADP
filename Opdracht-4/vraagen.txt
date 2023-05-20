@@ -1,0 +1,2 @@
+1.  TempDisplay constructor, pointer naar Subject of ITempsensor
+    of moet TemoSensor derived zijn van Subject implaats van ITempsensor
