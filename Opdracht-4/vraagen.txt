@@ -2,3 +2,5 @@
     of moet TemoSensor derived zijn van Subject implaats van ITempsensor
 
 2. In machine twee Motor of apart Mone & Mtwo.
+
+3. Include Interface of derived class?

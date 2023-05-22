@@ -7,6 +7,7 @@
 
 //----------------------------------------------------------------------
 class Subject;
+class Machine;
 
 //----------------------------------------------------------------------
 class TempDisplay : public Observer
@@ -16,8 +17,8 @@ public:
 
     virtual void Update() override { Draw(); }
 
-    void Draw();
+    void Draw() override;
 };
 
 //----------------------------------------------------------------------
-#endif      // #ifndef TEMPDISPLAY_H
+#endif		// #ifndef TEMPDISPLAY_H
