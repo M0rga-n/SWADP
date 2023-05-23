@@ -4,3 +4,5 @@
 2. In machine twee Motor of apart Mone & Mtwo.
 
 3. Include Interface of derived class?
+
+4. Pointer naar Interface of derived class (UserInterface)

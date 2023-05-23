@@ -25,5 +25,5 @@ void ConsoleUserInterface::Halt()
 //----------------------------------------------------------------------
 void ConsoleUserInterface::DrawInt(int temp)
 {
-	
+	std::cout << "Temp: " << temp << std::endl;
 }

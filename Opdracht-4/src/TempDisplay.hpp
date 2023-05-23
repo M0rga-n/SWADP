@@ -7,17 +7,20 @@
 
 //----------------------------------------------------------------------
 class Subject;
-class Machine;
+class IUserInterface;
 
 //----------------------------------------------------------------------
 class TempDisplay : public Observer
 {
 public:
-    TempDisplay(Subject* sensor);
+    TempDisplay(Subject* sensor, IUserInterface* UI);
 
     virtual void Update() override { Draw(); }
 
-    void Draw() override;
+	void Draw();
+
+private:
+	IUserInterface* p_IUserInterface;
 };
 
 //----------------------------------------------------------------------
